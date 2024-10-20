@@ -1,0 +1,7 @@
+<h1>All Residents</h1> 
+
+<section class="resident_info">
+  <% @residents.each do |resident| %> 
+    <p><strong>Name:</strong> <%= "#{resident.name}, Age: #{resident.age}, Occupation #{resident.occupation}" %></p>
+  <% end %>
+</section>
